@@ -1,0 +1,56 @@
+body {
+  color: #fff;
+  background-color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.signin-content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 175px;
+}
+.signin {
+  margin-top: 75px;
+  width: 75%;
+  max-width: 800px;
+}
+div.form {
+  padding-top: 5%;
+  border-top: 2px solid #ffc107;
+  background-color: #0c0c0c;
+  padding: 50px 15px 30px 15px;
+  border-radius: 0px 0px 30px 30px;
+}
+.navbar {
+  /* border-bottom: 2px solid #ffc107; */
+  background-color: #0c0c0c;
+}
+label {
+  margin-bottom: 8px;
+}
+img {
+  width: 30%;
+  min-width: 100px;
+  max-width: 200px;
+}
+.btn {
+  transition: 0.75s;
+}
+.btn-warning,
+.btn-dark {
+  margin-top: 40px;
+  margin-right: 10px;
+}
+.btn-warning:hover {
+  box-shadow: 0 0 20px #ffc107;
+}
+.navbar-brand {
+  color: #ffc107;
+  letter-spacing: 3px;
+  margin-left: 10px;
+}
+h1 {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
