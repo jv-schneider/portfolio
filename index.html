@@ -18,6 +18,7 @@
         <a class="navbar-brand">JS</a>
         <form class="d-flex" role="search">
           <input
+            id="search-bar"
             class="form-control me-2"
             type="search"
             placeholder="Search"
@@ -29,10 +30,17 @@
     </nav>
     <div class="signin-content">
       <div class="signin">
-        <h1><img src="undraw_pic_profile_re_7g2h.svg" alt="" /></h1>
+        <div class="img-container">
+          <img id="profile-img" src="undraw_pic_profile_re_7g2h.svg" alt="" />
+        </div>
         <div class="form">
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Username</label>
+            <label
+              id="username-label"
+              for="exampleInputEmail1"
+              class="form-label"
+              >Username</label
+            >
             <input
               type="text"
               class="form-control bg-dark"
@@ -62,6 +70,7 @@
             <option selected>Male</option>
             <option value="1">Female</option>
           </select>
+          <p id="info">"" is already taken</p>
           <button
             id="submit-login-button"
             type="submit"
@@ -69,7 +78,11 @@
           >
             Log in
           </button>
-          <button id="signup-button" type="submit" class="btn btn-dark">
+          <button
+            id="signup-button"
+            type="submit"
+            class="btn btn-outline-warning"
+          >
             Sign up
           </button>
         </div>

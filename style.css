@@ -36,21 +36,42 @@ img {
   transition: 0.75s;
 }
 .btn-warning,
-.btn-dark {
-  margin-top: 40px;
+.btn-outline-warning {
+  margin-top: 10px;
   margin-right: 10px;
 }
 .btn-warning:hover {
   box-shadow: 0 0 20px #ffc107;
+}
+.btn-outline-warning:hover {
+  box-shadow: 0 0 20px #ffc107;
+  background-color: #ffffff00;
+  color: #ffc107;
+}
+.btn-dark:hover {
+  box-shadow: 0 0 20px;
+  background-color: #212529;
 }
 .navbar-brand {
   color: #ffc107;
   letter-spacing: 3px;
   margin-left: 10px;
 }
-h1 {
+#search-bar {
+  height: fit-content;
+}
+.d-flex {
+  display: flex;
+  align-items: baseline;
+}
+.img-container {
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
   font-size: 40px;
+}
+p#info {
+  margin: 20px 0px 10px 0px;
+  color: red;
+  opacity: 0;
 }
