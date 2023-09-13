@@ -29,6 +29,14 @@ function checkValidInput() {
   }
 }
 
+function isMale() {
+  if (genderField.value == 1) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
 function signIn() {
   username = usernameField.value;
   password = passwordField.value;
@@ -62,7 +70,9 @@ signupButton.addEventListener("click", () => {
     account = {
       username: usernameField.value,
       password: passwordField.value,
+      gender: isMale() ? "male" : "female",
     };
+    console.log(account.gender);
     database.push(account);
     signupButton.setAttribute("disabled", "true");
     infoField.style.opacity = 0;
@@ -75,10 +85,10 @@ signupButton.addEventListener("click", () => {
 // });
 
 genderField.addEventListener("change", () => {
-  if (genderField.value == 1) {
-    profileImg.setAttribute("src", "undraw_female_avatar_efig.svg");
-  } else {
+  if (isMale()) {
     profileImg.setAttribute("src", "undraw_pic_profile_re_7g2h.svg");
+  } else {
+    profileImg.setAttribute("src", "undraw_female_avatar_efig.svg");
   }
 });
 
@@ -86,6 +96,6 @@ let database = [
   {
     username: "jasper",
     password: "0404",
-    male: true,
+    gender: "male",
   },
 ];
