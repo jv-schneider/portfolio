@@ -1,0 +1,27 @@
+:root {
+  --primary-color: #ffc107;
+}
+body {
+  color: #fff;
+  background-color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  overflow-x: hidden;
+}
+.navbar {
+  /* border-bottom: 2px solid var(--primary-color); */
+  background-color: #212529;
+}
+.navbar-brand {
+  color: var(--primary-color);
+  letter-spacing: 3px;
+  margin-left: 10px;
+}
+.navbar-brand:hover {
+  color: var(--primary-color);
+}
+.welcome-message {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  color: var(--primary-color);
+}
