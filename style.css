@@ -4,12 +4,8 @@
 body {
   color: #fff;
   background-color: black;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
-}
-.navbar {
-  /* border-bottom: 2px solid var(--primary-color); */
-  background-color: #212529;
 }
 .signin-content {
   display: flex;
@@ -39,30 +35,21 @@ img {
 .btn {
   transition: 0.75s;
 }
-#submit-login-button,
-#signup-button {
+.btn {
   margin-top: 10px;
   margin-right: 10px;
 }
-#submit-login-button:hover,
-#signup-button:hover {
+.btn:hover {
   box-shadow: 0 0 20px var(--primary-color);
 }
-.btn-outline-warning:hover {
-  background-color: #ffffff00;
-  color: var(--primary-color);
+.btn-outline-warning:hover,
+.btn-outline-warning:active {
+  background-color: #ffffff00 !important;
+  color: var(--primary-color) !important;
 }
 .btn-dark:hover {
   box-shadow: 0 0 20px;
   background-color: #212529;
-}
-.navbar-brand {
-  color: var(--primary-color);
-  letter-spacing: 3px;
-  margin-left: 10px;
-}
-.navbar-brand:hover {
-  color: var(--primary-color);
 }
 .img-container {
   margin-bottom: 50px;
