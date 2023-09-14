@@ -1,9 +1,10 @@
 :root {
   --primary-color: #ffc107;
+  --background-color: #000;
 }
 body {
   color: #fff;
-  background-color: black;
+  background-color: var(--background-color);
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
@@ -21,27 +22,59 @@ h1 {
 }
 #container-intro {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   height: 100vh;
   width: 100%;
 }
 #text-container {
-  margin: 0 25% 0 10%;
+  margin: 0 15% 0 15%;
+  min-width: 300px;
 }
 .btn-outline-warning:hover,
 .btn-outline-warning:active {
   background-color: #ffffff00 !important;
   color: var(--primary-color) !important;
 }
-/* #style-element {
+#aboutme-container {
   width: 100%;
-  height: 80px;
-  background: linear-gradient(to right, #ffc107ab, #ffc107);
-} */
-#container-projects {
-  margin: 50px 10px 500px 10%;
+  height: 500px;
+  background-color: #212529;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
 }
-.project-cover {
-  width: 150px;
+#aboutme-h {
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+}
+#aboutme-content {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+@media screen and (max-width: 800px) {
+  #aboutme-content > img {
+    display: none;
+  }
+  #aboutme-content > p {
+    margin-right: 10px;
+  }
+}
+#aboutme-content > img {
+  margin-top: -80px;
+  width: 15%;
+  min-width: 150px;
+  height: 380px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+#aboutme-content > p {
+  width: 50%;
+  min-width: 250px;
+  font-size: 20px;
+  line-height: 30px;
+}
+#container-projects {
+  margin: 50px 0 500px 10%;
 }
