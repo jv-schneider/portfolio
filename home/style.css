@@ -17,7 +17,6 @@ h1 {
 
 .btn {
   transition: 0.75s;
-  font-weight: bold;
 }
 .btn#contact {
   margin-top: 50px;
@@ -31,14 +30,14 @@ h1 {
   color: var(--primary-color) !important;
 }
 
-#container-intro {
+#intro-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100%;
 }
-#text-container {
+#intro-text {
   margin: 0 15% 0 15%;
 }
 
@@ -46,6 +45,7 @@ h1 {
   width: 100%;
   height: 550px;
   background-color: var(--secondary-color);
+  color: #fff;
   clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
 }
 #aboutme-h {
@@ -59,14 +59,7 @@ h1 {
   justify-content: center;
   max-height: 300px;
 }
-@media screen and (max-width: 575px) {
-  #aboutme-content > img {
-    display: none;
-  }
-  h1 {
-    font-size: 40px;
-  }
-}
+
 #aboutme-content > img {
   width: 25%;
   min-width: 300px;
@@ -81,6 +74,25 @@ h1 {
   overflow-y: scroll;
 }
 
-#container-projects {
-  margin: 50px 0 500px 10%;
+@media screen and (min-width: 1024px) {
+  #intro-container {
+    margin: 0;
+    justify-content: start;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #aboutme-content > img {
+    display: none;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  #aboutme-container {
+    width: 100%;
+    height: 550px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  }
 }
