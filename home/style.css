@@ -1,18 +1,23 @@
 :root {
   --primary-color: #ffc107;
-  --background-color: #000;
+  --secondary-color: #212529;
 }
 body {
   color: #fff;
-  background-color: var(--background-color);
+  background-color: black;
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
+
 h1 {
-  font-size: 45px;
+  font-size: 50px;
+  font-weight: bold;
+  font-style: italic;
 }
+
 .btn {
   transition: 0.75s;
+  font-weight: bold;
 }
 .btn#contact {
   margin-top: 50px;
@@ -20,26 +25,27 @@ h1 {
 .btn#contact:hover {
   box-shadow: 0 0 20px var(--primary-color);
 }
+.btn-outline-warning:hover,
+.btn-outline-warning:active {
+  background-color: #ffffff00 !important;
+  color: var(--primary-color) !important;
+}
+
 #container-intro {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100%;
 }
 #text-container {
   margin: 0 15% 0 15%;
-  min-width: 300px;
 }
-.btn-outline-warning:hover,
-.btn-outline-warning:active {
-  background-color: #ffffff00 !important;
-  color: var(--primary-color) !important;
-}
+
 #aboutme-container {
   width: 100%;
-  height: 500px;
-  background-color: #212529;
+  height: 550px;
+  background-color: var(--secondary-color);
   clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
 }
 #aboutme-h {
@@ -51,30 +57,30 @@ h1 {
   margin-top: 50px;
   display: flex;
   justify-content: center;
-  gap: 10%;
+  max-height: 300px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 575px) {
   #aboutme-content > img {
     display: none;
   }
-  #aboutme-content > p {
-    margin-right: 10px;
+  h1 {
+    font-size: 40px;
   }
 }
 #aboutme-content > img {
-  margin-top: -80px;
-  width: 15%;
-  min-width: 150px;
-  height: 380px;
-  border-radius: 15px;
-  object-fit: cover;
+  width: 25%;
+  min-width: 300px;
+  max-width: 550px;
 }
 #aboutme-content > p {
+  margin-left: 50px;
+  padding-right: 50px;
   width: 50%;
-  min-width: 250px;
   font-size: 20px;
   line-height: 30px;
+  overflow-y: scroll;
 }
+
 #container-projects {
   margin: 50px 0 500px 10%;
 }

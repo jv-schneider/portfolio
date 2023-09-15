@@ -1,5 +1,6 @@
 :root {
   --primary-color: #ffc107;
+  --secondary-color: #212529;
 }
 body {
   color: #fff;
@@ -20,7 +21,7 @@ body {
 div.form {
   padding-top: 5%;
   border-top: 2px solid var(--primary-color);
-  background-color: #212529;
+  background-color: var(--secondary-color);
   padding: 50px 15px 30px 15px;
   border-radius: 0px 0px 30px 30px;
 }
@@ -44,12 +45,12 @@ img {
 }
 .btn-outline-warning:hover,
 .btn-outline-warning:active {
-  background-color: #ffffff00 !important;
+  background-color: transparent !important;
   color: var(--primary-color) !important;
 }
 .btn-dark:hover {
   box-shadow: 0 0 20px;
-  background-color: #212529;
+  background-color: var(--secondary-color);
 }
 .img-container {
   margin-bottom: 50px;
