@@ -1,0 +1,64 @@
+:root {
+  --primary-color: #ffc107;
+  --secondary-color: #212529;
+}
+body {
+  color: #fff;
+  background-color: black;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+.signin-content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 175px;
+}
+.signin {
+  margin-top: 75px;
+  width: 75%;
+  max-width: 800px;
+}
+div.form {
+  padding-top: 5%;
+  border-top: 2px solid var(--primary-color);
+  background-color: var(--secondary-color);
+  padding: 50px 15px 30px 15px;
+  border-radius: 0px 0px 30px 30px;
+}
+label {
+  margin-bottom: 8px;
+}
+img {
+  width: 30%;
+  min-width: 125px;
+  max-width: 200px;
+}
+.btn {
+  transition: 0.75s;
+}
+.btn {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.btn:hover {
+  box-shadow: 0 0 20px var(--primary-color);
+}
+.btn-outline-warning:hover,
+.btn-outline-warning:active {
+  background-color: transparent !important;
+  color: var(--primary-color) !important;
+}
+.btn-dark:hover {
+  box-shadow: 0 0 20px;
+  background-color: var(--secondary-color);
+}
+.img-container {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+p#info {
+  margin: 20px 0px 10px 0px;
+  color: red;
+  opacity: 0;
+}

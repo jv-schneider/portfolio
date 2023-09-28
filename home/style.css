@@ -193,24 +193,6 @@ h1 {
   clip-path: polygon(0% 0%, 30% 15%, 100% 0%, 100% 100%, 0% 100%);
 }
 
-#footer-links-container {
-  padding-top: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-  flex-wrap: wrap;
-}
-
-a > img {
-  width: 125px;
-  border-radius: 50%;
-  transition: 0.5s;
-}
-a > img:hover {
-  transform: scale(1.1);
-}
-
 @media screen and (min-width: 1024px) {
   #intro-container {
     margin: 0;
