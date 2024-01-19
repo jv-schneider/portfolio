@@ -50,8 +50,7 @@ h1 {
   margin-bottom: 15px;
 }
 
-.btn#contact:hover,
-.btn#signout:hover {
+.btn:hover {
   box-shadow: 0 0 20px var(--primary-color);
 }
 .btn-outline-warning:hover,
@@ -99,14 +98,14 @@ h1 {
 }
 
 #aboutme-content > img {
-  width: 25%;
+  width: 15%;
   min-width: 275px;
   max-width: 550px;
 }
 #aboutme-content > p {
-  margin-left: 50px;
+  margin-left: 150px;
   padding-right: 50px;
-  width: 50%;
+  width: 40%;
   font-size: 20px;
   line-height: 30px;
 }
@@ -136,7 +135,7 @@ h1 {
 #portfolio-img-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin-top: 100px;
   gap: 50px;
@@ -155,7 +154,7 @@ h1 {
   text-align: center;
   width: 100%;
   margin-top: var(--section-gap);
-  padding: 150px 0 150px 0;
+  padding: 200px 0 150px 0;
   background-color: var(--secondary-color);
   color: #fff;
   clip-path: polygon(
@@ -179,11 +178,10 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
   gap: 150px;
-  width: 100%;
+  width: 80%;
   height: 600px;
-  margin-bottom: 50px;
+  margin: 100px 10% 50px 10%;
 }
 
 .project > img {
@@ -197,6 +195,7 @@ h1 {
 
 .card {
   padding-bottom: 15px;
+  border-radius: 15px;
 }
 
 .card-body > p {
@@ -206,23 +205,36 @@ h1 {
 
 footer {
   width: 100%;
-  height: 500px;
+  height: 291px;
   margin-top: var(--section-gap);
   background-color: var(--secondary-color);
   clip-path: polygon(0% 0%, 30% 15%, 100% 0%, 100% 100%, 0% 100%);
   padding-top: 200px;
-  justify-content: right;
 }
 
 .footer-icon > img {
   width: 50px;
 }
 
-#footer-container {
-  width: 50%;
+#footer-icon-container {
   display: flex;
+  gap: 25px;
   align-items: center;
-  justify-content: space-around;
+  margin-right: 75px;
+}
+
+#footer-container {
+  display: flex;
+  height: 50px;
+  justify-content: right;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.ball {
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.7;
 }
 
 @media screen and (min-width: 1024px) {
@@ -255,13 +267,20 @@ footer {
   }
 }
 
-@media screen and (max-width: 950px) {
-  #projects-container {
+@media screen and (max-width: 1470px) {
+  #project {
     height: 1025px;
   }
-}
-@media screen and (max-width: 625px) {
   #projects-container {
-    height: 1290px;
+    height: 1750px;
+  }
+}
+@media screen and (max-width: 925px) {
+  #project {
+    height: 1900px;
+  }
+  #projects-container {
+    height: 2600px;
+    padding-top: 250px;
   }
 }
