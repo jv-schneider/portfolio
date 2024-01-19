@@ -20,6 +20,10 @@ h1 {
   color: var(--primary-color);
 }
 
+.btn {
+  transition: box-shadow 0.75s;
+}
+
 .hidden {
   opacity: 0;
   filter: blur(8px);
@@ -32,15 +36,18 @@ h1 {
   transform: translateX(0);
 }
 
-.btn {
-  transition: 0.75s;
+#intro-button-container {
+  margin-top: 100px;
+  flex-wrap: wrap;
 }
+
+.btn#contact {
+  margin-right: 15px;
+}
+
 .btn#contact,
 .btn#signout {
-  margin-top: 50px;
-}
-.btn#contact {
-  margin-right: 25px;
+  margin-bottom: 15px;
 }
 
 .btn#contact:hover,
@@ -247,11 +254,5 @@ footer {
 @media screen and (max-width: 625px) {
   #projects-container {
     height: 1290px;
-  }
-}
-@media screen and (max-width: 371px) {
-  .btn#signout {
-    margin-top: 15px;
-    transition: 0s;
   }
 }

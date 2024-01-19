@@ -57,7 +57,7 @@ function clearForm() {
 
 submitButton.addEventListener("click", () => {
   if (signIn()) {
-    window.location.href = "../home/home.html";
+    window.location.href = "home/home.html";
   } else {
     infoField.innerText = `Wrong password or username!`;
     infoField.style.opacity = 1;
