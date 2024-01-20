@@ -24,16 +24,22 @@ h1 {
   transition: box-shadow 0.75s;
 }
 
-.hidden {
+.hidden.left {
   opacity: 0;
   filter: blur(8px);
   transform: translateX(-100%);
   transition: all 1.5s;
 }
+.hidden.right {
+  opacity: 0;
+  filter: blur(8px);
+  transform: translateX(90%);
+  transition: all 1.5s;
+}
 .show {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
+  opacity: 1 !important;
+  filter: blur(0) !important;
+  transform: translateX(0) !important;
 }
 
 #intro-button-container {
@@ -72,7 +78,7 @@ h1 {
 
 #aboutme-container {
   width: 100%;
-  height: 700px;
+  height: 525px;
   background-color: var(--secondary-color);
   color: #fff;
   clip-path: polygon(
@@ -103,11 +109,14 @@ h1 {
   max-width: 550px;
 }
 #aboutme-content > p {
-  margin-left: 150px;
+  margin-left: 100px;
   padding-right: 50px;
+  padding-left: 25px;
   width: 40%;
   font-size: 20px;
   line-height: 30px;
+  border-left: 4px solid #ffffffdd;
+  height: max-content;
 }
 
 #portfolio-container {
@@ -119,7 +128,10 @@ h1 {
   background-color: var(--secondary-color);
   clip-path: polygon(
     0% 0%,
-    20% 5%,
+    2% 0%,
+    8% 10%,
+    30% 5%,
+    40% 0%,
     70% 7%,
     80% 3%,
     100% 0%,
@@ -196,11 +208,19 @@ h1 {
 .card {
   padding-bottom: 15px;
   border-radius: 15px;
+  width: 350px !important;
+  height: 550px !important;
+}
+
+.card > img {
+  height: 250px;
+  object-fit: cover;
 }
 
 .card-body > p {
   margin-top: 20px;
   margin-bottom: 30px;
+  padding: 0px 10px;
 }
 
 footer {
@@ -208,7 +228,7 @@ footer {
   height: 291px;
   margin-top: var(--section-gap);
   background-color: var(--secondary-color);
-  clip-path: polygon(0% 0%, 30% 15%, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 30% 25%, 80% 0%, 100% 0%, 100% 100%, 0% 100%);
   padding-top: 200px;
 }
 
@@ -244,7 +264,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 950px) {
   h1 {
     font-size: 40px;
   }
@@ -258,12 +278,19 @@ footer {
     max-height: none;
   }
   #aboutme-content > p {
-    padding: 0 15px 0 15px;
-    margin: 0;
-    margin-top: 50px;
+    margin: 75px 50px 50px 100px;
     width: 100%;
     min-width: 300px;
     overflow-y: hidden;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  :root {
+    --section-gap: 100px;
+  }
+  #aboutme-container {
+    height: 900px;
   }
 }
 
@@ -282,5 +309,19 @@ footer {
   #projects-container {
     height: 2600px;
     padding-top: 250px;
+  }
+  #projects-container {
+    clip-path: polygon(
+      0% 5%,
+      20% 6%,
+      35% 7%,
+      90% 3%,
+      100% 2%,
+      100% 100%,
+      80% 98%,
+      30% 99%,
+      10% 97%,
+      0% 100%
+    );
   }
 }

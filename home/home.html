@@ -20,7 +20,7 @@
   </head>
   <body>
     <section id="intro-container">
-      <div id="intro-text" class="hidden">
+      <div id="intro-text" class="hidden left">
         <h1>Hi, my name is <span class="primary-color">Jasper</span>!</h1>
         <h1>I am the <span class="primary-color">Developer</span> you need.</h1>
         <div id="intro-button-container">
@@ -42,7 +42,7 @@
       <h1 id="aboutme-h">ABOUT ME</h1>
       <div id="aboutme-content">
         <img src="undraw_programming_re_kg9v.svg" alt="" />
-        <p>
+        <p class="hidden right">
           I am a
           <span class="primary-color"
             >15-year-old programmer and developer</span
@@ -57,7 +57,7 @@
 
     <section id="portfolio-container">
       <h1>MY PORTFOLIO</h1>
-      <div id="portfolio-img-container" class="hidden">
+      <div id="portfolio-img-container" class="hidden left">
         <img
           src="https://brandeps.com/logo-download/H/HTML-5-logo-vector-01.svg"
           alt=""
@@ -96,7 +96,7 @@
 
     <section id="projects-container">
       <h1>MY PROJECTS</h1>
-      <div class="project hidden">
+      <div class="project hidden right">
         <div
           class="card"
           style="width: 18rem; background-color: #111519; color: #fff"
@@ -109,7 +109,9 @@
           <div class="card-body">
             <h4 class="card-title">Alien vs. Astroids</h4>
             <p class="card-text">
-              A space-themed videogame, writen using the python library pygame
+              A space-themed <span class="primary-color">videogame</span> in
+              wich you fly an alien-spaceship. It was written using the
+              <span class="primary-color">Python library pygame</span>.
             </p>
             <a href="#" class="btn btn-outline-warning btn-lg">Explore</a>
           </div>
@@ -119,16 +121,20 @@
           style="width: 18rem; background-color: #111519; color: #fff"
         >
           <img
-            src="alienVsAstroids.png"
+            src="ortsfaktorSimulation.png"
             class="card-img-top"
-            alt="Alien-spaceship"
+            alt="physics simulation"
           />
           <div class="card-body">
-            <h4 class="card-title">Alien vs. Astroids</h4>
+            <h4 class="card-title">Simulator</h4>
             <p class="card-text">
-              A space-themed videogame, writen using the python library pygame
+              A simple <span class="primary-color">simulation</span> to
+              demonstrate the gravitational accelaration, written using the
+              <span class="primary-color">Python library pygame</span>.
             </p>
-            <a href="#" class="btn btn-outline-warning btn-lg">Explore</a>
+            <a href="alienVsAstroids.png" class="btn btn-outline-warning btn-lg"
+              >Explore</a
+            >
           </div>
         </div>
         <div
@@ -136,16 +142,23 @@
           style="width: 18rem; background-color: #111519; color: #fff"
         >
           <img
-            src="alienVsAstroids.png"
+            src="geopedia.png"
             class="card-img-top"
-            alt="Alien-spaceship"
+            alt="geopgrahy-webiste"
           />
           <div class="card-body">
-            <h4 class="card-title">Alien vs. Astroids</h4>
+            <h4 class="card-title">Geopedia</h4>
             <p class="card-text">
-              A space-themed videogame, writen using the python library pygame
+              A <span class="primary-color">website</span> which lets you
+              explore the different countries of the world, written using
+              <span class="primary-color">JavaScript, HTML, CSS </span>
+              and <span class="primary-color">React.js</span>.
             </p>
-            <a href="#" class="btn btn-outline-warning btn-lg">Explore</a>
+            <a
+              href="https://jv-schneider.github.io/geopedia/"
+              class="btn btn-outline-warning btn-lg"
+              >Explore</a
+            >
           </div>
         </div>
       </div>
