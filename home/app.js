@@ -9,7 +9,7 @@ const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
 
 const colors = ["#ffc107"];
-const numBalls = 12;
+const numBalls = 15;
 const balls = [];
 
 for (let i = 0; i < numBalls; i++) {

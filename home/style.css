@@ -199,7 +199,6 @@ h1 {
 .project > img {
   width: 275px;
   object-fit: cover;
-  transition: 0.5s;
 }
 .project > img:hover {
   transform: scale(1.05);
