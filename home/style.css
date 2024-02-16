@@ -272,9 +272,6 @@ hr {
 #footer-link-container > a:hover {
   color: #ffffff66;
   text-decoration: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
 }
 
 #copyright-text {
